@@ -1,0 +1,175 @@
+.profile-main {
+    margin: 20px 0;
+}
+
+.profile-title.card {
+    border-radius: 10px;
+    margin: 35px 0 35px;
+}
+
+.profile-title h4 {
+    font-size: 26px;
+    font-weight: 900;
+    margin: 0;
+    color: #2059a7;
+    padding-left: 10px;
+}
+
+.profile {
+    margin: 40px auto;
+    background-image: linear-gradient(90deg, #e5e5e5 50%, #ffffff 50%);
+}
+
+
+
+.form-user {
+    position: relative;
+    perspective: 600px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.form-user.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.form-user .card {
+    padding-left: 40px;
+    border: none;
+    position: relative;
+
+}
+
+.front {
+    backface-visibility: hidden;
+
+}
+
+.profile-card.back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+
+.profile-card .card-header {
+    background: transparent;
+    border-bottom: 1px solid #2059A7;
+}
+
+.profile-card .card-header img {
+    display: block;
+    width: 20%;
+    margin: 40px auto 0;
+    border-radius: 50%;
+}
+
+.profile-username {
+    text-align: center;
+    font-size: 26px;
+    color: #2059A7;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.profile-info {
+    display: flex;
+    margin-top: 20px;
+    color: #2059a7;
+    align-items: center;
+}
+
+.profile-info h5 {
+    width: 30%;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.profile-info p {
+    flex: 1;
+    font-size: 18px;
+    margin: 0;
+}
+
+.profile-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 60px 0;
+    background: #2059A7;
+    color: white;
+    padding: 12px 0;
+    border-radius: 12px;
+    border: none;
+}
+
+.profile-btn i {
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+
+}
+
+.profile-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-form label {
+    width: 30%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profile-form input {
+    flex: 1;
+    font-size: 18px;
+    background: #BDC3D8;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 10px;
+    outline: none;
+    color: #2059A7;
+}
+
+.profile-img {
+    position: relative;
+}
+
+[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+.profile-img label {
+    position: absolute;
+    bottom: 6%;
+    left: 53%;
+}
+
+.fas.fa-camera {
+    cursor: pointer;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .profile-card {
+        margin-left: 0;
+        padding: 0 1.5rem;
+    }
+}
